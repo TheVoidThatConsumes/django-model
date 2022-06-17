@@ -12,7 +12,5 @@ class Post(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     published_date = models.DateTimeField(auto_now=True)
 
-
-
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
